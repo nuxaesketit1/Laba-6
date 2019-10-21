@@ -1,0 +1,37 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+
+	setlocale(0, "");
+
+	int a, b, c, d, t;
+
+	cout << "Введите A = ";
+
+	cin >> a;
+
+	cout << "\nВведите B = ";
+
+	cin >> b;
+
+	cout << "\nВведите C = ";
+
+	cin >> c;
+
+	d = (a / c) * (b / c);
+
+	cout << "\nКоличество квадратов в прямоугольнике : " << d << endl;
+
+	t = a * b - d * pow(c, 2);
+
+	cout << "Площадь незанятой части : " << t << endl;
+
+	cout << endl;
+
+	system("pause");
+
+	return 0;
+
+}
