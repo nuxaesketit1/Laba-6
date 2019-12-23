@@ -1,19 +1,13 @@
 #include <iostream>
-#include<cmath>
 using namespace std;
-
-int main () {
-setlocale(LC_ALL, "Russian");
- int A,B,C,d,e,S;
- cout « "A=";
- cin » A;
- cout « "B=";
- cin » B;
- cout « "C=";
- cin » C;
- d=A*B/pow(C,2);
- e=A*B-d*pow(C,2);
- cout « "Количество квадратов - " « d « endl;
- cout « "Незанятая часть - " « e;
- return 0;
+int main()
+{
+    cout<<"Vvedite chisla"<<endl;
+    int a,b,c,k,nez;
+    cin>>a>>b>>c; //A div C - количество квадратов, размещенных на стороне A,
+                  //B div C - количество квадратов, размещенных на стороне B,
+                  //Тогда общее количество квадратов равно произведению:
+    k=(a/c)*(b/c);
+    nez=(a*b)-k*c*c;
+    cout<<"kol-vo kvadratov="<<k<<", ostatok="<<nez<<endl;
 }
